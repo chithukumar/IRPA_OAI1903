@@ -1,0 +1,313 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="638,3930" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="72">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="602,3865" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DataTable" />
+      <Variable x:TypeArguments="sd:DataColumn" Name="url" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: New tab" sap:VirtualizedContainerService.HintSize="560,918" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="249a14eb-3314-4ef7-a907-00db4684670e" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,702" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="249a14eb-3314-4ef7-a907-00db4684670e" Text="Knowafest in tamilnadu" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="153, 48, 990, 28" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New tab - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New tab - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="840de197-cfab-402c-aeef-d8a66d67e9ab" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAA+IAAAAgCAYAAACW0sJpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADrSURBVHhe7dcxDcBAEMCwo/Lwiv1BXBF0qzLZUkBkznNXkiRJkiQ1zQIAAAAZIw4AAAAhIw4AAAAhIw4AAAChzxGf8egAAADwNyMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAIbcNAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAISMOAAAAoTnPXUmSJEmSVHT3Bd8ODmd6k2TOAAAAAElFTkSuQmCC" InformativeScreenshot="6b6d64a693bc968d0479502943250796.png" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='New tab and 1 more page - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, Image" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+              <ui:SendHotkey.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="92086959-c511-465b-84d1-d96ca0b592c7" InformativeScreenshot="b2afb944ec38583132cb7c18abfe8bdf" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='New tab - Personal - Microsoft​ Edge' /&gt;&lt;ctrl name='New tab - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:SendHotkey.Target>
+            </ui:SendHotkey>
+            <uix:NClick ClickType="Single" DisplayName="Click 'College Events'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="249a14eb-3314-4ef7-a907-00db4684670e" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.bing.com/search?pglt=297&amp;q=knowafest+i+tamilnadu&amp;cvid=333a9088f9e1492db7864df2d9a7271a&amp;gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQNIBCTEyODU0ajBqMagCCLACAQ&amp;FORM=ANNTA1&amp;PC=U531" DesignTimeRectangle="210, 389, 615, 27" ElementType="Text" FriendlyName="'College Events'" FullSelectorArgument="&lt;webctrl aaname='College Events in Tamil Nadu November 2024 - Knowafest.com' parentid='b_results' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='College Events in Tamil Nadu November 2024 - Knowafest.com' parentid='b_results' tag='A' type='' check:text='College Events in Tamil Nadu November 2024 - Knowafest.com' /&gt;" Guid="87e809eb-6cc9-4c02-8455-855a59a1b7ff" ImageBase64="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" InformativeScreenshot="9fb9d15fe7cc52d33cd8bb23a9f52b2f.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='knowafest i tamilnadu - Search' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 744" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAh4SURBVFhHpdd7UFNnGgbwWBURCAQVtu0/OzudcXVFVEBATdWKLVvkIuEmWAoUtOttqsICIiqKiEQBoV4xut1O1d11lW4RvFTSQ0ggECABkhAIIF4QpXZTt1Pcdbt59j050QoBq+07804YhuT5fe/58p0D70XLi3kQM69mgJlb02+aU9OHObIeeMqMmCM3YI5Ci3n1Gmr1kE+jsptaskhd/WvrW39Z+TDfSnwY05BXzQNQOPVtsIDZsm7qLnjWdsBTrsWculYCNMOnQQn/phoINdfNS9oudy/TVgitH/Vy5cs8Evoy35t8mIfwrvkGXjWDFH6Hwm/Cs+YGZtewgA54yPSYLW+Dp6IVc+ub4KVUYUEzC7iGpW0VWK67iKCuM+qwXsmLT8SPeZTvywyZLeHMP+HFDGJezT0C3OVWT+EelnAO4FHbRgg1AVTwbqiHb5MMC1qqLYDAjnN413AGK3tPDMX158dYI8YuP+Y/Elo55jPfgQXQ+C2rn0fh7AQsq6fRz2KDLa2jn1lAK02hGfOUjfBVsRO4agWcRVh3GQsAAcyr+/PGRvgzj/MJAFo99fcU/i1N4AEB7lsAnjLu2nvIDJbVs8GzZO34nawVs2pZQAvtBRXtAxmE6itY1n4RgfrPCHAC0TcLQeFIGNhhTh5Mt90X/sx/hRRu9mP+bQHMZ/5F/ZCC2Wt/l177afUsoJNCtU+DR/ZseTMhGmgjfonFmgoEaM8juOsEIm4UIe52LpLuZ2HN16lD1tgfy495bKKm8EdWwHfwkpow84tbmFnRS92DGZe6CGCkcP2o4Wx7yFtoLyixsPkKAf6BgHYWUIaIXjFib+UhaSAVawY3YaMpRWKNtqxewoY/Wf30c31w230NLqnlEGRWwjXrCqZkVVFfwtSMcryaX4U3/t48BoD9KjLwbZRiUUsllmvPIMhQhugbuYi9mY3E/i1IubceGx7Em63xFsAQXX94fP4NBFnXwM+4BudsBi67FBDk1sM1rwFT8pSYmleHabkyTNstxbSdl/FqbhWmV2qGAWbLVZhbJ4e/6hIWt/wNAa2fYEVHCUI7xVjVtw0JdzYh+e5a/OF+PDY9iJRQ+A8xBMD0M/1wSL0Kp+214Oc0wnmvBi772yEQ6+B6UIcp1FMLdXArbIPbgRa47a+HW64UbtkVeOMCNw2P2hY6lBQEUGB+fRUWNV/EMs0pBHcUQ2TMQUxvBuJubMYH/Wvx4b14rB+MHuAtqn6kmXn+a0xOk8IhWwnH3Wrw83RwLjDARdwJQWEXXIuMmHLIiKnU00qoDxngXqyD+4EmuOfJ4LajEr+tUtKpKMdcuRReisvwbziPN5s+xTL1MQTr8hBu2I5o4xa835eCpNuJSOmPxYd3ReB5Vzz8H39nI+yzVXDY3QbHvA445XeCX2CE8wEjXA52Q1DUDdfiHkL0YGpJDyE68XppR/evSg0F7kXqdPd9CuVrBdfhwbCA6wSoxALlZ3hTdQpvNR9BiC4XIkMWAbZide9aJN5MRPKtKA4w4y+DmLS9Gfa72jA5Vw+HvE447qPe3zUcUcghBNl1+M2Wz0us2+dpuefVJk4vr4a3/AJ8FefgX/dnLFaVIaBJjOC2TIRqMxFp2Ij3ehKR0LfaAlhzJxw8t+Iu2GW3YlKOHva5Bkzea7AgHKwIpwKCiDmESzoDxyCx0pppUzM+ufrYW3aWAGexsP4kFisPYplKjCBNBkLb0yDSb0CsIQ7x3VFIuiFCys1Q8FwPGjFxpw52u/SYtNsA+z0cYvJIRKaCwgvgFFaabs2zKZ+/Xm33ln0Kv9ojWKQoxJIGMd5pzECgKg0hmnUIb09GlC4e7xkj8b4xBCl9gWbehGwtJhBg4q4O2OV0EKLDgrB/FrFXD8fQIgovAV90PNWaZ1PejCTfR3aKAIcJcABL6vYgoD6NABsQ0pIIUXsCYvTRNAUR4jt/j0RjQDdv/HYC7NATQm+LYC8Ji9hQBccQAoiOgR95ssCaZ1M+X5UMzK85goW1+6n34S1FKpYrUxHYuA4rGhMQpo6HSBOFWH0IYnXvIt4QIOS9sl2H8dm6URGTrAiHiKNwWnmYDQc/+nS3NW9YeUk/FnpLi+k0FcOfyYWwdieWyrciQLEegfUJHKBJBFFLKCI1QYjTBzKWN76SpTONhbBjJ5HVDIeQQlr9cfCjTrEAMz/qtM3DhXe1uNxbWghf6R4sZHZCyGzF0tqNCJAn4526BAQ1rEKoKhwidQgL4MLZGrdNxxACTxDjR04inQ6n0ENwiihjw6n/RJDTA9a3Dyvf6hy1nzTHvECaToBUAqwjwAd4Wx6HoPpwBDeEm8JUoZutf87VuG3aGELABkE9kb4Z9usq4RhWah0/hXMAdhrl1o+wKaF002Yh85FkCZPMBMhWM2/XrpIEyiPGfjYkxBCLGPcsIptD2KXVw3Hlx6MB4Bx5ctT98PKVqc0nBCw9AjExXUUTKIHT6AA4R5QNOYtODB/rc8p1RWGMa9DBUR5QM7Um3ggEB6EzIPww7YETFP50DzwLAAGojw+5hB8rd1l51OaZTxByKEYQXCwRBBeZCAACjDK5TK2Q2jwaYlLKF3AKP0qhEg4xOgAEAAGoj8Al7DAEoaXUJSAACEBdBAKYCTDGfqBLQY2RiPEZLXCMOEaXgb4J7FfxlwHyrWljVKZWYoOgtlt3jaZwhNuMkSziZwF+fA58bnGTMLOQZxH2SRe4S8GeCZESAlD4iwHMBPiJlY8sbk+YRiIsk6AAuilROBvMhTvTfWIMgIkAP+//Q0tx06BzgoVwiPHpLZicdBF8uj8400ScKZR95YKp6fcEGCLAS676eZXJnphahhCmJ6fmhKw22P2xge6WX8Lxo6/gmsr88Fpa9cPXU86PecseXjze/wGADjhbeB2rcwAAAABJRU5ErkJggg==" InformativeScreenshot="bf197f3b8e59418a6ef09360b84fd1c2.png" Selector="&lt;html app='msedge.exe' title='New tab'/&gt;" Url="edge://newtab/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="560,436" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'CollegeEv Page'" sap:VirtualizedContainerService.HintSize="434,344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="bef9d577b94fa140414b38cab5f555ee" Selector="&lt;html app='msedge.exe' title='College Events in Tamil Nadu November 2024 | Engineering | Medical | Arts | MBA' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,198" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'TABLE  tablaDatos'" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Start Date' attr='text' /&gt;&lt;column name='Fest Name' src='url' /&gt;&lt;column name='Fest Type' attr='text' /&gt;&lt;column name='College Name' attr='text' /&gt;&lt;column name='City' attr='text' /&gt;&lt;/extract-table&gt;" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="ExtractData_1" MaxNumberOfResults="100" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c9ce2b71-8082-4015-beff-48a37945c849" InformativeScreenshot="46d6f885749fb0661381a067165a90ef" Selector="&lt;webctrl tag='TABLE' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+    </Sequence>
+    <ui:WriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="560,115" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" StartingCell="A1" WorkbookPath="C:\Users\SHRIRAM\Downloads\Book2.xlsx" />
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="560,84" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;scraped&quot;]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="560,2060" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="526,1940" sap2010:WorkflowViewState.IdRef="Sequence_16">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="foundelement" />
+              <Variable x:TypeArguments="s:DateTime" Name="eventDate" />
+              <Variable x:TypeArguments="x:Int32" Name="daysRemaining" />
+              <Variable x:TypeArguments="x:String" Name="bodyText" />
+              <Variable x:TypeArguments="x:String" Name="subjectText" />
+              <Variable x:TypeArguments="x:String" Name="variable2" />
+              <Variable x:TypeArguments="x:String" Name="variable3" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:DateTime">[eventDate]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:DateTime">[DateTime.Parse(CurrentRow("Start Date").ToString)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="484,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[daysRemaining]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">[(eventDate - Now).Days]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <If Condition="[daysRemaining=7]" sap:VirtualizedContainerService.HintSize="484,758" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,571" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                  <Sequence.Variables>
+                    <Variable x:TypeArguments="x:String" Name="subjectText" />
+                    <Variable x:TypeArguments="x:String" Name="bodyText" />
+                    <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="image" />
+                  </Sequence.Variables>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[subjectText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Reminder: Only 7 Days Left for " + CurrentRow("Fest Name").ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[bodyText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["Hello, don't miss the " + CurrentRow("Fest Name").ToString + " starting soon! It's a " + CurrentRow("Fest Type").ToString + " at " + CurrentRow("College Name").ToString]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" Body="[bodyText]" DisplayName="Send SMTP Mail Message" Email="220701054@rajalakshmi.edu.in" EnableSSL="True" From="220701054@rajalakshmi.edu.in" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Password="chithu@54" Port="587" SecureConnection="StartTls" Server="smtp.gmail.com" Subject="[subjectText]" TimeoutMS="60000" To="220701054@rajalakshmi.edu.in">
+                    <ui:SendMail.Files>
+                      <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                    </ui:SendMail.Files>
+                  </ui:SendMail>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Mail sent successfully&quot;]" />
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+            <If Condition="[daysRemaining=3]" sap:VirtualizedContainerService.HintSize="484,850" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="418,663" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,571" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:String" Name="subjectText" />
+                      <Variable x:TypeArguments="x:String" Name="bodyText" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[subjectText]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["Reminder: Only 3 Days Left to Register for " + CurrentRow("Fest Name").ToString]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[bodyText]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">["Hurry! Only 3 days left to register for " + CurrentRow("Fest Name").ToString + ", a " + CurrentRow("Fest Type").ToString + " happening at " + CurrentRow("College Name").ToString + " in " + CurrentRow("City").ToString + ". Don’t miss out!"]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" Body="[bodyText]" DisplayName="Send SMTP Mail Message" Email="220701054@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="False" Password="chithu@54" Port="587" SecureConnection="StartTls" Server="smtp.gmail.com" Subject="[subjectText]" TimeoutMS="60000" To="220701054@rajalakshmi.edu.in">
+                      <ui:SendMail.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4" />
+                      </ui:SendMail.Files>
+                    </ui:SendMail>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[&quot;Mail sent successfully&quot;]" />
+                  </Sequence>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_15">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>
